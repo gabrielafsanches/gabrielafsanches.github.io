@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sanches">
+    <meta name="description" content="Site index dos meus projetos">
+    <title>Aulas - HTML/CSS/JS</title>
+    <style>
+        body{
+            background-color: #00263fc7;
+            color: #FFF;
+        }
+        mark{
+            background-color: #3d9bf9;
+            color: #830055;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>Página 1</li>
+                <li>Página 2</li>
+                <li>Página 3</li>
+                <li>Página 4</li>
+                <li>Página 5</li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <h1>Estudando listas.</h1>
+        <h2>Listas Não Ordenadas</h2>
+        <p>Listas não ordenadas são utilizadas quando os itens não estão dispostos em ordem numérica. Quando a ordem dos itens é alterada não há mudança de significado entre eles, pois os itens não possuem uma definição exata dentro da lista. </p>
+        <p>Exemplo de lista não ordenada:</p>
+        <ul>
+            <li>Café</li>
+            <li>Leite</li>
+            <li>Bolacha</li>
+        </ul>
+        <p>Os itens de uma lista não ordenada são marcados com uma pequena bolinha preta denominada <code>disc</code>, sendo o padrão. No entanto, a marcação padrão ode ser alterada utilizando o atributo <code>&lt;type&gt;</code>.</p>
+        <p>Utilizando o marcador <code>circle</code>:</p>
+        <ul type="circle">
+            <li>Item da lista</li>
+            <li>Item da lista</li>
+            <li>Item da lista</li>
+        </ul>
+        <p>Utilizando o marcador <code>square</code>:</p>
+        <ul type="square">
+            <li>Item da lista</li>
+            <li>Item da lista</li>
+            <li>Item da lista</li>
+        </ul>
+        <br>
+        <h2>Listas Ordenadas.</h2>
+        <p>As listas prdenadas são usadas para os itens que desejam ser marcados com números.</p>
+        <p>Exemplo de lista ordenada:</p>
+        <ol>
+            <li>Item 1 da lista</li>
+            <li>Item 2 da lista</li>
+            <li>Item 3 da lista</li>
+        </ol>
+        <p>Os itens de uma lista ordenada são marcados de forma padrão por números. Para representar alfabeticamente ou com algarismos romanos, utilizaremos <code>&lt;type="a"&gt;</code> ou <code>&lt;type="i"&gt;</code>.</p>
+        <p>Utilizando o <code>&lt;type="a"&gt;</code>:</p>
+        <ol type="a">
+            <li>Item 1 da lista</li>
+            <li>Item 2 da lista</li>
+            <li>Item 3 da lista</li>
+        </ol>
+        <p>Utilizando o <code>&lt;type="i"&gt;</code>:</p>
+        <ol type="i">
+            <li>Item 1 da lista</li>
+            <li>Item 2 da lista</li>
+            <li>Item 3 da lista</li>
+        </ol>
+        <br>
+        <h2>Listas de Descrição.</h2>
+        <p>Uma lista de descrição é usada para organizar termos ou nomes com uma descrição. Para definir uma lista de descrição utiliza-se a tag é denominada <code>&lt;dl&gt;</code>.</p>
+        <p>Dentro de <code>&lt;dl&gt;</code>, usa-se <code>&lt;dt&gt;</code> para nomes/termos, e <code>&lt;dd&gt;</code> para a descrição dos mesmos.</p>
+        <p>Exemplo de uma lista de descrição:</p>
+        <dl>
+            <dt>Item 1</dt>
+                <dd>- Este é o primeiro item da lista.</dd>
+            <dt>Item 2</dt>
+                <dd>- Este é o segundo item da lista.</dd>
+            <dt>Item 3</dt>
+                <dd>- Este é o terceiro item da lista.</dd>
+        </dl>
+        <br>
+        <h2>Listas Aninhadas.</h2>
+        <p>Listas aninhadas são listas dentro de listas.</p>
+        <p>Exemplo de lista aninhada:</p>
+        <ul>
+            <li>Frutas</li>
+            <ul>
+                <li>Banana</li>
+                <li>Maçã</li>
+                <li>Mamão</li>
+            </ul>
+            <li>Sucos</li>
+            <ul>
+                <li>Laranja</li>
+                <li>Morango</li>
+                <li>Limão</li>
+            </ul>
+        </ul>
+        <br>
+        <p>Controle de contagem de listas.</p>
+        <p>Por padrão, a enumeração de uma lista ordenada inicia-se no 1. Use o atribuuto <code>&lt;start&gt;</code> para iniciar a contagem de um número específico.</p>
+        <p>Exemplo de uma lista com contagem inicial em um específico número:</p>
+        <ol start="5">
+            <li>Item 1 da lista</li>
+            <li>Item 2 da lista</li>
+            <li>Item 3 da lista</li>
+        </ol>
+        <ol type="I" start="5">
+            <li>Item 1 da lista</li>
+            <li>Item 2 da lista</li>
+            <li>Item 3 da lista</li>
+        </ol>
+        <hr>
+        <h1>Entidades HTML.</h1>
+        <p>Essas entidades HTML são símbolos que só conseguem ser exibidos no navegador com a utilização de códigos.</p>
+        <p>Para representarmos os colchetes angulares &lt; e &gt;, escrevemos da seguinte maneira: </p>
+        <ul>
+            <li>com <em>*lt;</em> estamos descrevendo o símbolo "menor que" (less than).</li>
+            <li>com <em>*gt;</em> estamoms descrevendo o símbolo "maior que" (greater than).</li>
+        </ul>
+        <p><mark>Para inserirmos qualquer código para formatação dos símbolos é necessário colocar o prefixo <em>&</em>.</mark></p>
+        <p>A seguir, uma tabela com alguns códigos úteis:</p>
+
+        <img src="tabela.jpg" alt="Tabela de entidades HTML">
+        <hr>
+        <h1>Formatação de textos.</h1>
+        <p>As tags de formatação de texto não servem para embelezar, e sim, dar semântica ao seu texto. Quando escrevemos alguma palavra em nergito ou itálico no HTML, estamos dizendo para ele que essas palavras tem uma certa importância dentro daquele contexto. Abaixo há alguns exemplos de tags com semânticas para formatação de textos:</p>
+        <ul>
+            <li>A tag <code>&lt;strong&gt;</code>: texto em negrito. Confere uma importância particular.</li>
+            <li>A tag <code>&lt;em&gt;</code>: texto em itálico. Dá enfase ao texto.</li>
+            <li>A tag <code>&lt;mark&gt;</code>: para marcar, realçar o texto.</li>
+            <li>A tag <code>&lt;ins&gt;</code>: sublinha o texto. Indica atenção.</li>
+            <li>A tag <code>&lt;small&gt;</code>: deixa o texto menor, sendo empregado para marcar avisos obrigatórios, restrições legais ou restrições de uso de conteúdo (copyright).</li>
+            <li>A tag <code>&lt;del&gt;</code>: excluir ou eliminar em texto. Usa-se para desconsiderar um texto.</li>
+            <li>A tag <code>&lt;sub&gt;</code>: texto subscrito - H<sub>2</sub>O.</li>
+            <li>A tag <code>&lt;sup&gt;</code>: texto sobrescrito - 2<sup>2</sup>.</li>
+            <li>A tag <code>&lt;abbr&gt;</code>: utilizada para colocar o significado de siglas - <abbr title="Cascading Style Sheet">CSS</abbr> &larr; passe o mouse!</li>
+            <li>A tag <code>&lt;code&gt;</code>: conteúdo estilizado indicando que é um fragmento de código.</li>
+            <li>A tag <code>&lt;pre&gt;</code>: o texto é exibido em uma fonte de largura fixa e preserva os espaços e quebras de linha.</li>
+            <li>A tag <code>&lt;cite&gt;</code>: representa uma referência a umm trabalho (livro, poema, música e etc.).</li>
+            <li>A tag <code>&lt;q&gt;</code>: destina-se a citações curtas e coloca o texto entre aspas. O atributo <code>&lt;cite&gt;</code> dentro da tag <code>&lt;q&gt;</code> é uma URL que indica uma fonte ou mensagem para a informção citada.</li>
+            <li>A tag <code>&lt;blockquote&gt;</code>: para citações longas, criando um recuo no texto.</li>
+            <li>A tag <code>&lt;adress&gt;</code>: para informações de contato, podendo ser endereço físico, URL, e-mail, telefone, midia social e etc.</li>
+        </ul>
+    </main>
+</body>
+</html>
