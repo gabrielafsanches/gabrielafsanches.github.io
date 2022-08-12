@@ -6,153 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sanches">
     <meta name="description" content="Site index dos meus projetos">
-    <title>Aulas - HTML/CSS/JS</title>
-    <style>
-        body{
-            background-color: #00263fc7;
-            color: #FFF;
-        }
-        mark{
-            background-color: #3d9bf9;
-            color: #830055;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HTML5 - Entendendo a linguagem</title>
 </head>
 <body>
     <header>
         <nav>
             <ol>
-                <li>Página 1</li>
-                <li>Página 2</li>
-                <li>Página 3</li>
-                <li>Página 4</li>
-                <li>Página 5</li>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="html_page1.html">Aprendendo HTML5 na prática</a></li>
             </ol>
         </nav>
+        <h1>HTML5 - entendendo a linguagem</h1>
     </header>
     <main>
-        <br>
-        <h1>Estudando listas.</h1>
-        <h2>Listas Não Ordenadas</h2>
-        <p>Listas não ordenadas são utilizadas quando os itens não estão dispostos em ordem numérica. Quando a ordem dos itens é alterada não há mudança de significado entre eles, pois os itens não possuem uma definição exata dentro da lista. </p>
-        <p>Exemplo de lista não ordenada:</p>
-        <ul>
-            <li>Café</li>
-            <li>Leite</li>
-            <li>Bolacha</li>
-        </ul>
-        <p>Os itens de uma lista não ordenada são marcados com uma pequena bolinha preta denominada <code>disc</code>, sendo o padrão. No entanto, a marcação padrão ode ser alterada utilizando o atributo <code>&lt;type&gt;</code>.</p>
-        <p>Utilizando o marcador <code>circle</code>:</p>
-        <ul type="circle">
-            <li>Item da lista</li>
-            <li>Item da lista</li>
-            <li>Item da lista</li>
-        </ul>
-        <p>Utilizando o marcador <code>square</code>:</p>
-        <ul type="square">
-            <li>Item da lista</li>
-            <li>Item da lista</li>
-            <li>Item da lista</li>
-        </ul>
-        <br>
-        <h2>Listas Ordenadas.</h2>
-        <p>As listas prdenadas são usadas para os itens que desejam ser marcados com números.</p>
-        <p>Exemplo de lista ordenada:</p>
-        <ol>
-            <li>Item 1 da lista</li>
-            <li>Item 2 da lista</li>
-            <li>Item 3 da lista</li>
-        </ol>
-        <p>Os itens de uma lista ordenada são marcados de forma padrão por números. Para representar alfabeticamente ou com algarismos romanos, utilizaremos <code>&lt;type="a"&gt;</code> ou <code>&lt;type="i"&gt;</code>.</p>
-        <p>Utilizando o <code>&lt;type="a"&gt;</code>:</p>
-        <ol type="a">
-            <li>Item 1 da lista</li>
-            <li>Item 2 da lista</li>
-            <li>Item 3 da lista</li>
-        </ol>
-        <p>Utilizando o <code>&lt;type="i"&gt;</code>:</p>
-        <ol type="i">
-            <li>Item 1 da lista</li>
-            <li>Item 2 da lista</li>
-            <li>Item 3 da lista</li>
-        </ol>
-        <br>
-        <h2>Listas de Descrição.</h2>
-        <p>Uma lista de descrição é usada para organizar termos ou nomes com uma descrição. Para definir uma lista de descrição utiliza-se a tag é denominada <code>&lt;dl&gt;</code>.</p>
-        <p>Dentro de <code>&lt;dl&gt;</code>, usa-se <code>&lt;dt&gt;</code> para nomes/termos, e <code>&lt;dd&gt;</code> para a descrição dos mesmos.</p>
-        <p>Exemplo de uma lista de descrição:</p>
-        <dl>
-            <dt>Item 1</dt>
-                <dd>- Este é o primeiro item da lista.</dd>
-            <dt>Item 2</dt>
-                <dd>- Este é o segundo item da lista.</dd>
-            <dt>Item 3</dt>
-                <dd>- Este é o terceiro item da lista.</dd>
-        </dl>
-        <br>
-        <h2>Listas Aninhadas.</h2>
-        <p>Listas aninhadas são listas dentro de listas.</p>
-        <p>Exemplo de lista aninhada:</p>
-        <ul>
-            <li>Frutas</li>
-            <ul>
-                <li>Banana</li>
-                <li>Maçã</li>
-                <li>Mamão</li>
-            </ul>
-            <li>Sucos</li>
-            <ul>
-                <li>Laranja</li>
-                <li>Morango</li>
-                <li>Limão</li>
-            </ul>
-        </ul>
-        <br>
-        <p>Controle de contagem de listas.</p>
-        <p>Por padrão, a enumeração de uma lista ordenada inicia-se no 1. Use o atribuuto <code>&lt;start&gt;</code> para iniciar a contagem de um número específico.</p>
-        <p>Exemplo de uma lista com contagem inicial em um específico número:</p>
-        <ol start="5">
-            <li>Item 1 da lista</li>
-            <li>Item 2 da lista</li>
-            <li>Item 3 da lista</li>
-        </ol>
-        <ol type="I" start="5">
-            <li>Item 1 da lista</li>
-            <li>Item 2 da lista</li>
-            <li>Item 3 da lista</li>
-        </ol>
+        <h2>Tag &lt;head&gt;</h2>
+        <p>Uma configuração muito importante contida nessa tag é a codificação encoding ou charset &#8212; incluída na tag <code>&lt;meta&gt;</code>. Ela configura caracteres "especiais" (acento e cedilha).</p>
+        <p>Um dos valores mais comuns usados hoje em dia é o <b>UTF-8</b>, também conhecido como <b>Unicode</b>. Há outras possibilidades como o <b>latin1</b>, usada anntigamente.</p>
+        <p>O UTF-8 é a recomendação atual para encoding na Web por ser amplamente suportada em navegadores e editores de códigos, alpem de compatível com praticamente todos os idiomas do mundo.</p>
         <hr>
-        <h1>Entidades HTML.</h1>
-        <p>Essas entidades HTML são símbolos que só conseguem ser exibidos no navegador com a utilização de códigos.</p>
-        <p>Para representarmos os colchetes angulares &lt; e &gt;, escrevemos da seguinte maneira: </p>
-        <ul>
-            <li>com <em>*lt;</em> estamos descrevendo o símbolo "menor que" (less than).</li>
-            <li>com <em>*gt;</em> estamoms descrevendo o símbolo "maior que" (greater than).</li>
-        </ul>
-        <p><mark>Para inserirmos qualquer código para formatação dos símbolos é necessário colocar o prefixo <em>&</em>.</mark></p>
-        <p>A seguir, uma tabela com alguns códigos úteis:</p>
-
-        <img src="tabela.jpg" alt="Tabela de entidades HTML">
+        <h2>A instrução do DOCTYPE!</h2>
+        <p>O <code>DOCTYPE</code> não é uma tag, mas uma instrução especial que indica ao navegador qual versão do HTML deve ser utilizada para exibir na página.  Quando não coloccamos essa instrução a página é exibida numa espécie de "modo de compatibilidade", onde algumas tags não funcionam totalmente corretas &#8212; principalmente as tags e estilizações mais atuais do HTML5.</p>
         <hr>
-        <h1>Formatação de textos.</h1>
-        <p>As tags de formatação de texto não servem para embelezar, e sim, dar semântica ao seu texto. Quando escrevemos alguma palavra em nergito ou itálico no HTML, estamos dizendo para ele que essas palavras tem uma certa importância dentro daquele contexto. Abaixo há alguns exemplos de tags com semânticas para formatação de textos:</p>
+        <h2>Web Components</h2>
+        <p>Consistem em "um conjunto de cinco tecnologias: <em>Templates, Shadow DOM, Custom Elements, HTML Imports e Decorators</em>", sendo que essa última ainda não possui uma especificação.</p>
         <ul>
-            <li>A tag <code>&lt;strong&gt;</code>: texto em negrito. Confere uma importância particular.</li>
-            <li>A tag <code>&lt;em&gt;</code>: texto em itálico. Dá enfase ao texto.</li>
-            <li>A tag <code>&lt;mark&gt;</code>: para marcar, realçar o texto.</li>
-            <li>A tag <code>&lt;ins&gt;</code>: sublinha o texto. Indica atenção.</li>
-            <li>A tag <code>&lt;small&gt;</code>: deixa o texto menor, sendo empregado para marcar avisos obrigatórios, restrições legais ou restrições de uso de conteúdo (copyright).</li>
-            <li>A tag <code>&lt;del&gt;</code>: excluir ou eliminar em texto. Usa-se para desconsiderar um texto.</li>
-            <li>A tag <code>&lt;sub&gt;</code>: texto subscrito - H<sub>2</sub>O.</li>
-            <li>A tag <code>&lt;sup&gt;</code>: texto sobrescrito - 2<sup>2</sup>.</li>
-            <li>A tag <code>&lt;abbr&gt;</code>: utilizada para colocar o significado de siglas - <abbr title="Cascading Style Sheet">CSS</abbr> &larr; passe o mouse!</li>
-            <li>A tag <code>&lt;code&gt;</code>: conteúdo estilizado indicando que é um fragmento de código.</li>
-            <li>A tag <code>&lt;pre&gt;</code>: o texto é exibido em uma fonte de largura fixa e preserva os espaços e quebras de linha.</li>
-            <li>A tag <code>&lt;cite&gt;</code>: representa uma referência a umm trabalho (livro, poema, música e etc.).</li>
-            <li>A tag <code>&lt;q&gt;</code>: destina-se a citações curtas e coloca o texto entre aspas. O atributo <code>&lt;cite&gt;</code> dentro da tag <code>&lt;q&gt;</code> é uma URL que indica uma fonte ou mensagem para a informção citada.</li>
-            <li>A tag <code>&lt;blockquote&gt;</code>: para citações longas, criando um recuo no texto.</li>
-            <li>A tag <code>&lt;adress&gt;</code>: para informações de contato, podendo ser endereço físico, URL, e-mail, telefone, midia social e etc.</li>
+            <li><em>Templates:</em> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciadoposteriormente em tempo de execução usando o JavaScrpt.
+                <p>Pense no template como um fragmento de conteúdo, que é armazeenado para um possível uso futuro no documento. Enquanto o parser processa o conteúdo do elemento <code>&lt;template&gt;</code> ao carregar a página, isso apenas garante que o conteúdo é válido; porém, o conteúdo do elemento ainda não foi renderizado.</p></li>
+            <li><em>Shadow DOM:</em> realiza o isolamento de elementos do DOM em trechos independentes evitando que estilos CSS e comportamentos JavaScript dos elementos alterem as características uns dos outros.</li>
+            <li><em>Custom Elements:</em> permite que o desenvolvedor crie tags diferentes das convencionais. Seu intuito é encapsular as demais tags em uma personalizada, reutilizável, manutenível e manuseável.
+            <p>Essa tecnologia auxilia bastante na diminuição dos enormes aninhamentos de divs, além de possibilitar que os elementos personalizados herdem características e propriedades de tags nativas específicas &#8212; como a tag <code>&lt;button&gt;</code>, por exemplo.</p></li>
+            <li><em>HTML Imports:</em> podemos importar documentos HTML inteiros para dentro de páginas de uma maneira semelhante à importação de um arquivo JavaScript ou CSS.
+            <p>O HTML Import cria uma nova requisição ao servidor para realizar o download do arquivo. Essa tecnologia auxilia no encapsulamento dos componentes em arquivos externos, possibilitando importá-los posteriormente.</p></li>
+            <li><em>Decorators:</em> aplicam os templates com base em seletores CSS e JavaScript para criar mudanças visuais e comportamentais.
+            <p>O elemento "content" inserido dentro do template será substituído com o conteúdo do elemento de decoração. E através do atributo "select" é possível especificar a posição exata do elemento particular na marcação que será produzida.</p>
+            <p>Com o CSS em conjunto com as Media Queries seria possível criar uma poderosa ferramenta de Responsive Web Design utilizando decoradores.</p></li>
         </ul>
-    </main>
-</body>
-</html>
+        <p><em>É importante ressaltar que os únicos navegadores que implementam as quatro tecnologias são o Google Chrome e o Opera.</em></p>
